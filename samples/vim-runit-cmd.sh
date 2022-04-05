@@ -25,5 +25,7 @@ function runItMakeTagsCmd() {
   exit 1
 }
 
-script_name=$0
-source "${HOME}/github.com/derwiath/vim-runit/runit-cmd.sh" "${script_name}" $@
+workspace_script_name=$0
+vim_config_root="${HOME}/github.com/derwiath/vim-config"
+vim_runit_root="${vim_config_root}/pack/derwiath/start/vim-runit"
+source "${vim_runit_root}/runit-cmd.sh" -- "${workspace_script_name}" $@
