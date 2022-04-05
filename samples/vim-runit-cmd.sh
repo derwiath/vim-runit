@@ -1,27 +1,27 @@
 #!/bin/bash
 
-function runItMakeCmd()
-{
+function runItMakeCmd() {
+  echo "Making"
   exit 1
 }
 
-function runItMakeFileCmd()
-{
+function runItMakeFileCmd() {
+  echo "Making file"
   exit 1
 }
 
-function runItTestCmd()
-{
+function runItTestCmd() {
+  echo "Testing"
   exit 1
 }
 
-function runItExtraCmd()
-{
+function runItExtraCmd() {
+  echo "Extra"
   exit 1
 }
 
-function runItMakeTagsCmd()
-{
+function runItMakeTagsCmd() {
+  echo "Making tags"
   exit 1
 }
 
