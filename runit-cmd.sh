@@ -1,7 +1,7 @@
 #!/bin/sh
 script_name=$0
 
-usage_params="<make|make_file|test|extra|tags> [arguments]"
+usage_params="<make|make_file|test|extra|tags|cook> [arguments]"
 if (($# == 0)); then
   echo "Usage: $script_name [calling_script] $usage_params"
   exit 1
@@ -37,6 +37,9 @@ case "$command" in
     ;;
   tags)
     runItMakeTagsCmd
+    ;;
+  cook)
+    runItCookCmd
     ;;
   *)
     echo "Error: Unknown command: $command" >&2
